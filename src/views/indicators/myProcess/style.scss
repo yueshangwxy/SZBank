@@ -1,0 +1,113 @@
+.condition {
+    display: flex;
+    align-items: center;
+    .desc {
+        white-space: nowrap;
+    }
+    span {
+        font-size: 14px;
+        color: rgba(32, 34, 36, 1);
+        margin-right: 8px;
+    }
+    .el-input {
+        width: 180px;
+        height: 30px;
+        .el-input__inner {
+            height: 100%;
+        }
+    }
+    .el-cascader {
+        width: 180px;
+        height: 30px;
+        margin-right: 8px;
+    }
+    .el-select {
+        width: 180px;
+        height: 30px;
+        margin-right: 8px;
+    }
+    .el-date-editor {
+        margin-right: 8px;
+    }
+    .el-button {
+        margin: 0 0 0 8px;
+    }
+}
+::-webkit-scrollbar {
+    width: 5px; 
+    height: 10px;
+}
+// 表格
+.table {
+    flex: 1;
+    overflow: auto;
+}
+.el-table::before {
+    background-color: #fff;
+    height: 0;
+}
+::v-deep .el-table {
+    margin-top: 24px;
+    padding-left: 4px;
+    // header
+    .el-table__header-wrapper {
+        .el-table__header {
+            tr {
+                th {
+                    color: rgba(32, 34, 36, 1);
+                    font-size: 14px;
+                    font-weight: 400;
+                    border: none;
+                }
+            }
+        }
+    }
+    // body
+    .el-table__body-wrapper {
+        .el-table__body {
+            border-spacing: 0 8px;
+            tr {
+                td:first-child {
+                    border-left: 1px solid rgba(232, 232, 232, 1);
+                }
+                td:last-child {
+                    position: relative;
+                    right: 4px;
+                    border-right: 1px solid rgba(232, 232, 232, 1);
+                }
+                td {
+                    color: rgba(77, 78, 80, 1);
+                    border-top: 1px solid rgba(232, 232, 232, 1);
+                    border-bottom: 1px solid rgba(232, 232, 232, 1);
+
+                    .el-tag {
+                        border: none;
+                        width: 44px;
+                        height: 21px;
+                        line-height: 21px;
+                    }
+                    .el-tag.el-tag--info {
+                        color: rgba(77, 78, 80, 1);
+                        
+                    }
+                    .el-tag.el-tag--danger {
+                        color: rgba(201, 31, 28, 1);
+                    }
+                    .el-tag.el-tag--warning {
+                        color: rgba(230, 151, 34, 1);
+                    }
+                }
+            }
+        }
+    }
+}
+// 分页
+.pagination {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    .el-pagination {
+        margin: 0;
+    }
+}

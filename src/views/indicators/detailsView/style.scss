@@ -1,0 +1,323 @@
+.contain {
+    height: 100%;
+    overflow: auto;
+
+    .title {
+        font-size: 16px;
+        color: #79ac43;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+
+        i {
+            width: 12px;
+            height: 12px;
+            border-radius: 2px;
+            background: #79ac43;
+            margin-right: 8px;
+        }
+    }
+
+    // 基本信息
+    .basicinfo {
+        .content {
+            margin-top: 8px;
+            padding: 16px;
+            background: #fafafa;
+
+            .name {
+                font-size: 16px;
+                color: #202224;
+
+                .el-tag {
+                    margin-right: 8px;
+                }
+
+                .el-tag--light {
+                    border: 1px solid #259dc2;
+                    background-color: #daedf2;
+                    color: #259dc2;
+                    margin-right: 4px;
+                }
+
+                .el-tag--warning {
+                    border: 1px solid #d69c15;
+                    background-color: #f2ebda;
+                    color: #d69c15;
+                    margin-right: 4px;
+                }
+
+                .el-tag--success {
+                    border: 1px solid #79ac43;
+                    background-color: #f2f7ec;
+                    border-color: #e4eed9;
+                    color: #79ac43;
+                }
+            }
+
+            .details {
+                display: flex;
+                font-size: 14px;
+                color: #4d4e50;
+                margin-top: 16px;
+                justify-content: space-between;
+
+                .left {
+                    width: 40%;
+
+                    p {
+                        width: 100%;
+                        margin: 0 0 8px 0;
+                        display: flex;
+
+                        span {
+                            flex: 1;
+                            line-height: 20px;
+                        }
+
+                        .el-textarea {
+                            flex: 1;
+                            font-size: 14px;
+                        }
+
+                        ::v-deep .el-textarea.is-disabled {
+                            .el-textarea__inner {
+                                padding: 0;
+                                background: transparent;
+                                border: none;
+                                color: #4d4e50;
+                            }
+                        }
+
+                        ::v-deep .el-input,
+                        .el-select {
+                            font-size: 14px;
+                            flex: 1;
+                            line-height: 20px;
+                            height: 20px;
+
+                            .el-input__inner {
+                                height: 20px;
+                                line-height: 20px;
+                            }
+                        }
+
+                        ::v-deep .el-input.is-disabled {
+                            .el-input__icon {
+                                display: none;
+                            }
+
+                            .el-input__inner {
+                                background: transparent;
+                                border: none;
+                                color: #4d4e50;
+                                padding: 0;
+                            }
+                        }
+
+                        .label {
+                            flex: 0.3;
+                            line-height: 20px;
+                        }
+                    }
+                }
+
+                .right {
+                    width: 55%;
+
+                    p {
+                        margin: 0 0 8px 0;
+                        display: flex;
+                        align-items: center;
+
+                        span {
+                            line-height: 20px;
+                        }
+
+                        ::v-deep .el-input {
+                            width: 23%;
+                            // flex: 1;
+                            line-height: 20px;
+                            height: 20px;
+                            margin-right: 1%;
+                            font-size: 14px;
+
+                            .el-input__inner {
+                                width: 100%;
+                                height: 20px;
+                                line-height: 20px;
+                            }
+                        }
+
+                        ::v-deep .el-input.is-disabled {
+                            .el-input__icon {
+                                display: none;
+                            }
+
+                            .el-input__inner {
+                                background: transparent;
+                                border: none;
+                                color: #4d4e50;
+                                padding: 0;
+                            }
+                        }
+
+                        ::v-deep .el-cascader {
+                            width: 20%;
+
+                            .el-input {
+                                width: 100%;
+
+                                .el-input__suffix {
+                                    display: flex;
+                                    align-items: center;
+                                }
+                            }
+                        }
+
+                        ::v-deep .el-cascader.cascaderAll {
+                            width: 50%;
+                        }
+
+                        .label {
+                            width: 15%;
+                        }
+
+                        .desc {
+                            width: 25%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // 字段信息
+    .fieldinfo {
+        margin-top: 16px;
+
+        .el-table::before {
+            display: none;
+
+        }
+
+        ::v-deep .el-table {
+            margin-top: 16px;
+            border: 1px solid #e8e8e8;
+
+            // header
+            .el-table__header-wrapper {
+                .el-table__header {
+                    tr {
+                        border: 1px solid #e8e8e8;
+
+                        th {
+                            color: rgba(32, 34, 36, 1);
+                            font-size: 14px;
+                            font-weight: 400;
+                            border: none;
+                            background: #fafafa;
+                        }
+                    }
+                }
+            }
+
+            // body
+            .el-table__body-wrapper {
+                .el-table__body {
+                    tr {
+                        font-size: 12px;
+                        color: #4d4e50;
+                    }
+                }
+            }
+
+            .cell {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+
+    // 指标加工详情信息
+    .detailedinfo {
+        margin-top: 16px;
+
+        .content {
+            margin-top: 8px;
+            padding: 16px;
+            background: #fafafa;
+
+            p {
+                font-size: 14px;
+                color: #4d4e50;
+                height: 20px;
+                margin: 0 0 8px 0;
+                display: flex;
+                align-items: center;
+
+                .label {
+                    width: 10%;
+                }
+
+                ::v-deep .el-input {
+                    // width: 23%;
+                    flex: 1;
+                    line-height: 20px;
+                    height: 20px;
+                    margin-right: 1%;
+                    font-size: 14px;
+
+                    .el-input__inner {
+                        width: 100%;
+                        height: 20px;
+                        line-height: 20px;
+                    }
+                }
+
+                ::v-deep .el-input.is-disabled {
+
+                    .el-input__inner {
+                        background: transparent;
+                        border: none;
+                        color: #4d4e50;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    // 指标统计项信息
+    .statisticalinfo {
+        margin-top: 16px;
+
+        .content {
+            margin-top: 8px;
+            padding: 16px;
+            background: #fafafa;
+
+            p {
+                font-size: 14px;
+                color: #4d4e50;
+                height: 20px;
+                margin: 0 0 8px 0;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+
+    .btn {
+        margin-top: 16px;
+
+        .el-button {
+            margin-left: 8px;
+            background: #79ac43;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+        }
+    }
+}

@@ -1,0 +1,89 @@
+.el-table::before {
+    background-color: #fff;
+    height: 0;
+}
+::v-deep .el-table {
+    margin-top: 24px;
+    padding-left: 4px;
+    // header
+    .el-table__header-wrapper {
+        .el-table__header {
+            tr {
+                th {
+                    color: rgba(32, 34, 36, 1);
+                    font-size: 14px;
+                    font-weight: 400;
+                    border: none;
+                }
+            }
+        }
+    }
+    // body
+    .el-table__body-wrapper {
+        .el-table__body {
+            border-spacing: 0 8px;
+            tr {
+                td:first-child {
+                    border-left: 1px solid rgba(232, 232, 232, 1);
+                }
+                td:last-child {
+                    position: relative;
+                    right: 4px;
+                    border-right: 1px solid rgba(232, 232, 232, 1);
+                }
+                td {
+                    color: rgba(77, 78, 80, 1);
+                    border-top: 1px solid rgba(232, 232, 232, 1);
+                    border-bottom: 1px solid rgba(232, 232, 232, 1);
+                    
+                }
+            }
+        }
+    }
+    // 复选框
+    .cell {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        .el-checkbox {
+            width: 16px;
+            height: 16px;
+            .el-checkbox__input {
+                .el-checkbox__inner {
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+            .el-checkbox__input.is-checked,.el-checkbox__input.is-indeterminate {
+                width: 16px;
+                height: 16px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #fff;
+                border: 1px solid #79AC43;
+                border-radius: 2px;
+            }
+            .el-checkbox__input.is-indeterminate {
+                .el-checkbox__inner {
+                    width: 8px;
+                    height: 4px;
+                    background: #79AC43;
+                }
+                .el-checkbox__inner::before {
+                    display: none;
+                }
+            }
+            .el-checkbox__input.is-checked {
+                .el-checkbox__inner {
+                    width: 8px;
+                    height: 8px;
+                    background: #79AC43;
+                }
+                .el-checkbox__inner::after {
+                    display: none;
+                }
+            }
+        }
+    }
+}

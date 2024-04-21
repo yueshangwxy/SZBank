@@ -1,0 +1,111 @@
+module.exports = {
+    data1: [
+        {
+            name: '123',
+            age: 23
+        }
+    ],
+    data2: [
+        {
+            name: '123',
+            age: 23
+        }
+    ],
+    catalogueList: {
+        classifyChild: [
+            { label: '全部',name: 'all' },
+            { label: '公司银行',name: 'com' },
+            { label: '零售银行',name: 'sale' },
+            { label: '数字银行',name: 'num' },
+            { label: '金融市场',name: 'fin' },
+            { label: '公共类',name: 'pub' },
+        ],
+        comChild: [
+            { label: '全部',name: 'all' },
+            { label: '对公贷款',name: '1' },
+            { label: '理财',name: '2' },
+            { label: '对公客户',name: '3' },
+            { label: '进出口类',name: '4' },
+            { label: '对公存款',name: '5' },
+            { label: '信用证',name: '6' },
+            { label: '保函',name: '7' },
+            { label: '银行本汇票',name: '8' },
+            { label: '商业汇票',name: '9' },
+            { label: '代发代扣',name: '10' },
+            { label: '代收代付',name: '11' },
+        ],
+        saleChild: [
+            { label: '全部',name: 'all' },
+            { label: '个人存款',name: '1' },
+            { label: '个人贷款',name: '2' },
+            { label: '网贷',name: '3' },
+            { label: '存折',name: '4' },
+            { label: '借记卡',name: '5' },
+            { label: '信用卡',name: '6' },
+            { label: '个人客户',name: '7' },
+            { label: '理财',name: '8' },
+            { label: '基金',name: '9' },
+            { label: '保险',name: '10' },
+            { label: '信托',name: '11' },
+            { label: '贵金属',name: '12' },
+            { label: '资管',name: '13' },
+            { label: '统一支付',name: '14' },
+            { label: '电子渠道',name: '15' },
+            { label: '线下渠道',name: '16' },
+            { label: '代发代扣',name: '17' },
+            { label: '代收代付',name: '18' },
+        ],
+        numChild: [
+            { label: '全部',name: 'all' },
+            { label: '个人客户',name: '1' },
+            { label: '个人存款',name: '2' },
+            { label: '个人贷款',name: '3' },
+            { label: '网贷',name: '4' },
+            { label: '借记卡',name: '5' },
+            { label: '信用卡',name: '6' },
+            { label: '理财',name: '7' },
+            { label: '基金',name: '8' },
+            { label: '统一支付',name: '9' },
+            { label: '电子渠道',name: '10' },
+            { label: '线下渠道',name: '11' },
+            { label: '代发代扣',name: '12' },
+        ],
+        finChild: [
+            { label: '全部',name: 'all' },
+            { label: '同业客户',name: '1' },
+            { label: '存放同业',name: '2' },
+            { label: '理财资管',name: '3' },
+            { label: '同业融资',name: '4' },
+            { label: '同业投资',name: '5' },
+            { label: '同业资管',name: '6' },
+        ],
+        pubChild: [
+            { label: '全部',name: 'all' },
+            { label: '机构目录',name: '1' },
+            { label: '员工目录',name: '2' },
+            { label: '渠道目录',name: '3' },
+            { label: '科目目录',name: '4' },
+            { label: '科技目录',name: '5' },
+        ],
+        tableChild: [
+            { label: '全部',name: 'all' },
+            { label: '业务表数据资产(STD)',name: '1' },
+            { label: '明细表数据资产(DWD)',name: '2' },
+            { label: '汇总表数据资产(DWS)',name: '3' },
+            { label: '业务个性数据资产(ADM)',name: '4' },
+        ],
+        apiChild: [],
+        targetChild: [
+            { label: '全部',name: 'all' },
+            { label: '原始指标',name: '1' },
+            { label: '衍生指标',name: '2' },
+            { label: '基础指标',name: '3' },
+        ],
+        labelChild: [
+            { label: '全部',name: 'all' },
+            { label: '个人客户标签',name: '1' },
+            { label: '对公客户标签',name: '2' },
+            { label: '同业客户标签',name: '3' },
+        ],
+    }
+}
