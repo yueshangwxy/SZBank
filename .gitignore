@@ -1,0 +1,14 @@
+node_modules
+
+# files
+/dist
+/pncs
+/src/router
+vue.config.js*
+
+# local env files
+.gitignore
+yarn-error.log
+package-lock.json
+
+
